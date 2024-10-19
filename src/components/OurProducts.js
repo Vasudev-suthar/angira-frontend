@@ -29,7 +29,7 @@ export default function OurProducts() {
             <div className="relative">
               <Link href="/stool" className="text-end ">
                 <Image src="/stool.png" width="385" height="300" className="md:ms-auto w-full lg:w-[400px] h-[210px] sm:h-[280px]" alt="Stool" />
-                <button className="bg-white text-xs md:text-base border border-[#766554] px-4 py-1 xl:py-1.5 absolute bottom-[20px] left-0 md:left-0 lg:left-[80px] xl:left-[210px] 2xl:left-[380px] tracking-widest text-[#766554]"><span className='text-xl'>Stool</span></button>
+                <button className="bg-white text-xs md:text-base border border-[#766554] px-4 py-1 xl:py-1.5 absolute bottom-[20px] left-0 md:left-0 lg:left-[80px] xl:left-[250px] 2xl:left-[380px] tracking-widest text-[#766554]"><span className='text-xl'>Stool</span></button>
               </Link>
             </div>
           </div>
@@ -40,7 +40,7 @@ export default function OurProducts() {
             <div className="text-center relative">
               <Link href="/coffeetable" className="">
                 <Image src="/coffeetable.png" width="388" height="300" className="ms-auto w-full lg:w-[400px] h-[210px] sm:h-[280px]" alt="Coffee Table" />
-                <button className="text-xs md:text-base bg-white border border-[#766554] px-4 py-1 md:py-1.5 absolute bottom-[20px] left-0 sm:left-[80%] md:left-[-40px] tracking-widest text-[#766554]"><span className='text-xl'>Coffee Table</span></button>
+                <button className="text-xs md:text-base bg-white border border-[#766554] px-4 py-1 md:py-1.5 absolute bottom-[20px] left-0 sm:left-[80%] md:left-[-20px] tracking-widest text-[#766554]"><span className='text-xl'>Coffee Table</span></button>
               </Link>
             </div>
 
