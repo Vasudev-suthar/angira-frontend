@@ -125,7 +125,7 @@ export default function Homepage() {
                 Defining Perfection Since
                 <span className=" relative lg:bottom-5">
                   <span className="pl-4 text-4xl md:text-[50px] font-semibold tracking-widest">200</span>
-                  <span className="relative bottom-[-4.5px] text-5xl md:text-[60px] font-semibold">5...</span>
+                  <span className="relative bottom-[-6.5px] text-5xl md:text-[60px] font-semibold">5...</span>
                 </span>
               </p>
             </div>
@@ -140,7 +140,7 @@ export default function Homepage() {
                 </p>
                 <p className=" tracking-widest leading-tight">
                   <span className="text-xl font-semibold">200</span>
-                  <span className="text-[24px] font-semibold relative top-1 ">5<span className="font-thin">...</span></span>
+                  <span className="text-[24px] font-semibold relative top-[3px] ">5<span className="font-thin">...</span></span>
                 </p>
               </div>
               <button
