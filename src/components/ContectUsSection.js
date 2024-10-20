@@ -43,7 +43,7 @@ export default function ContactUsSection () {
       </div>
 
       {/* Subscribe Section */}
-      <div className="flex justify-end relative bottom-5 sm:bottom-0 lg:mt-8 mr-3 sm:mr-5 lg:mr-14">
+      <div className="flex justify-end relative bottom-5 sm:bottom-0 lg:mt-8 mr-0.5 xs:mr-3 sm:mr-5 lg:mr-14">
         <button className="py-0.5 sm:py-1 lg:py-2 px-1.5 sm:px-4  lg:px-8 border rounded-full border-[#786756] bg-white text-[#786756] text-[8px] sm:text-sm lg:text-lg ">
           Subscribe to newsletter for newest designs
         </button>

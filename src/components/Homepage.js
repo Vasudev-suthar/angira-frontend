@@ -21,6 +21,10 @@ export default function Homepage() {
     router.push('/ourproducts');
   };
 
+  const navigateToFeaturedProducts = () => {
+    router.push('/featuredproducts');
+  };
+
   return (
     <div className="flex">
 
@@ -128,7 +132,7 @@ export default function Homepage() {
 
               {showSearch && (
                 <form className="flex mt-2 pt-1 pb-3 mb-2 px-5 lg:px-9 bg-white lg:mt-0 w-full" role="search">
-                  <input className="form-input w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-green-500"
+                  <input className="form-input w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-[#d8af88]"
                     type="search" placeholder="Search" aria-label="Search" />
                   <button className="ml-2 btn bg-[#948473] text-white px-4 py-2 rounded-md text-sm hover:bg-[#493d32]"
                     type="submit"
@@ -173,7 +177,7 @@ export default function Homepage() {
                 PRODUCTS
               </button>
             </div>
-            <SlArrowRight className=" absolute w-10 h-10 right-2 mt-14 text-white" />
+            <SlArrowRight className=" absolute w-10 h-10 right-2 mt-14 text-white" onClick={navigateToFeaturedProducts} />
           </div>
         </div>
       </div>

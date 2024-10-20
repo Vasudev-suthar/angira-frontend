@@ -1,8 +1,27 @@
+"use client"
+
 // FeaturedProducts.js
 import Image from 'next/image';
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import React, { useState } from 'react';
 
 export default function FeaturedProducts() {
+  const images = ["/DT1.png", "/DT2.png", "/DT3.png", "/DT4.png", "/DT5.png"];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextImage = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const prevIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+  const nextIndex = (currentIndex + 1) % images.length;
+
   return (
     <div className="block bg-[#F4F3F0] w-full overflow-x-hidden h-[100vh] sm:h-auto pb-9 sm:pb-20 xl:pb-28">
 
@@ -21,37 +40,79 @@ export default function FeaturedProducts() {
 
       <div>
         <div className="w-full relative">
-          {/* rounded white backgrond section  */}
           <div className='flex justify-between items-center pt-16 sm:pt-10 pb-5'>
-            <div className="rounded-full bg-white w-[26vw] md:w-[340px] h-[26vw] md:h-[340px] cursor-pointer -ml-[13.5%] hidden lg:block" ></div>
-
-            <div className="flex justify-between items-center mx-auto  md:px-0"> 
-            <BsArrowLeft className="relative left-3 text-4xl sm:text-5xl bg-[#dddbd6] text-[#766554] rounded-full p-2 opacity-70" />
-
-              <div className="rounded-full bg-white w-[55vw] md:w-[500px] h-[55vw] md:h-[500px] cursor-pointer z-10">
-              </div>
-              
-              <BsArrowRight className=" relative right-3 text-4xl sm:text-5xl bg-[#dddbd6] text-[#766554] rounded-full p-2 opacity-70" />
+            {/* Left White Circle with Previous Image */}
+            <div className="justify-between items-center rounded-full bg-white w-[26vw] md:w-[340px] h-[26vw] md:h-[340px] cursor-pointer -ml-[13.5%] hidden lg:flex">
+              <Image
+                src={images[prevIndex]}
+                width={400}
+                height={400}
+                alt='Previous Image'
+                className="max-w-none  cursor-pointer hidden lg:block z-20 opacity-50"
+              />
             </div>
-            
-            <div className="rounded-full bg-white w-[26vw] md:w-[340px] h-[26vw] md:h-[340px] cursor-pointer -mr-[13.5%] hidden lg:block" ></div>
+
+            {/* Main Image with Arrows */}
+            <div className="flex justify-between items-center mx-auto md:px-0">
+              <BsArrowLeft
+                className="relative left-3 text-4xl sm:text-5xl bg-[#dddbd6] text-[#766554] rounded-full p-2 opacity-70 cursor-pointer"
+                onClick={prevImage}
+              />
+
+              <div className="flex justify-between items-center rounded-full bg-white w-[55vw] md:w-[500px] h-[55vw] md:h-[500px] cursor-pointer z-10">
+                <Image
+                  src={images[currentIndex]}
+                  width={180}
+                  height={100}
+                  alt='Current Image'
+                  className="block xs:hidden sm:max-w-none cursor-pointer z-20 mx-auto"
+                />
+                <Image
+                  src={images[currentIndex]}
+                  width={400}
+                  height={200}
+                  alt='Current Image'
+                  className="hidden xs:block sm:hidden sm:max-w-none cursor-pointer z-20 mx-auto"
+                />
+                <Image
+                  src={images[currentIndex]}
+                  width={500}
+                  height={300}
+                  alt='Current Image'
+                  className="hidden sm:block lg:hidden max-w-none cursor-pointer z-20 mx-auto"
+                />
+                <Image
+                  src={images[currentIndex]}
+                  width={500}
+                  height={300}
+                  alt='Current Image'
+                  className="hidden lg:block max-w-none cursor-pointer z-20 mx-auto"
+                />
+              </div>
+
+              <BsArrowRight
+                className="relative right-3 text-4xl sm:text-5xl bg-[#dddbd6] text-[#766554] rounded-full p-2 opacity-70 cursor-pointer"
+                onClick={nextImage}
+              />
+            </div>
+
+            {/* Right White Circle with Next Image */}
+            <div className="justify-between items-center rounded-full bg-white w-[26vw] md:w-[340px] h-[26vw] md:h-[340px] cursor-pointer -mr-[13.5%] hidden lg:flex">
+              <Image
+                src={images[nextIndex]}
+                width={400}
+                height={400}
+                alt='Next Image'
+                className="max-w-none cursor-pointer hidden lg:block z-20 opacity-50"
+              />
+            </div>
           </div>
+
           <div className='w-full self-end flex justify-center mt-2'>
-            <p className='tracking-[10px] text-[#766554] text-lg sm:text-2xl font-normal'>Product Name</p>
+            <p className='tracking-[10px] text-[#766554] text-sm xs:text-lg sm:text-2xl font-normal'>Product Name</p>
           </div>
-          {/* image slider section */}
-          <div className="flex justify-between items-center py-5 absolute z-20 top-0 h-full w-full">
-            <Image src={"/DT4.png"} width={400} height={300} alt='' className="max-w-none  cursor-pointer hidden lg:block z-20 opacity-50 absolute left-[-200px]" />
- 
-              <Image src={"/DT2.png"} width={200} height={100} alt='' className="block sm:hidden max-w-none cursor-pointer z-20 mx-auto" />
-              <Image src={"/DT2.png"} width={400} height={200} alt='' className="hidden sm:block lg:hidden max-w-none cursor-pointer z-20 mx-auto" />
-              <Image src={"/DT2.png"} width={550} height={300} alt='' className="hidden lg:block max-w-none cursor-pointer z-20 mx-auto" />
-              
-            
-            <Image src={"/DTMAIN.png"} width={400} height={300} alt='' className="max-w-none cursor-pointer hidden lg:block z-20 opacity-50 absolute right-[-200px]" />
-          </div>
-        </div> 
-      </div>  
+        </div>
+      </div>
     </div>
   );
 }
