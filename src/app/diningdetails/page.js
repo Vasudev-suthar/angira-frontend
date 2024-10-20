@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 export default function DiningDetails() {
     return (
-        <div className='bg-gray-100 overflow-x-hidden'>
-            <div className='container bg-white px-4 mx-auto pt-10 md:pt-20 pb-3'>
+        <div className='bg-gray-100 overflow-x-hidden 2xl:container px-4 sm:px-8 mx-auto'>
+            <div className='bg-white pt-10 px-2 md:pt-20 pb-3'>
                 <div className=" flex flex-col md:flex-row w-full md:items-center justify-around lg:justify-start ">
                     <div className="order-2 md:order-1  w-full md:w-1/6 md:h-full">
                         <div className='h-full flex mt-10 md:mt-0 md:flex-col items-center justify-between md:gap-20'>
@@ -40,7 +40,7 @@ export default function DiningDetails() {
                     </ul>
                 </div>
             </div>
-            <div className='container flex flex-col gap-6 md:gap-10 lg:gap-16 bg-white px-4 mx-auto pt-6 sm:pt-10 lg:pt-20 border-t border-gray-400'>
+            <div className='flex flex-col gap-6 md:gap-10 lg:gap-16 bg-white px-2 pt-6 sm:pt-10 lg:pt-20 border-t border-gray-400'>
                 <div className='flex flex-wrap justify-between items-center'>
                     <div className='flex flex-col items-center'>
                         <Image src="/top1.png" alt='' width={"100"} height={"50"} className='w-[50px] h-[25px] md:w-[100px] md:h-[50px]' />

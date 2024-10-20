@@ -24,7 +24,7 @@ export default function DiningTablePage() {
   ];
   return (
     <div className="w-screen pb-10 h-auto font-sans">
-      <div className="2xl:container my-5 mx-auto px-8 sm:px-16">
+      <div className="2xl:container my-5 mx-auto px-4 sm:px-8">
         <div className="flex flex-wrap mt-3">
           <div className="w-full lg:w-6/12 shadow-[100px_0px_50px_15px_white]">
             <div className="hidden md:block h-[85px]"></div>

@@ -27,9 +27,21 @@ export default function Homepage() {
       {/* Sidebar for Desktop */}
       <div className="hidden sm:flex flex-col justify-center bg-white w-[40px] lg:w-[70px] h-[924px]">
         <ul className=" flex justify-center list-disc transform -rotate-90 text-center space-x-12 text-[#766554] text-lg lg:text-xl font-semibold">
-          <li className=" list-none">Facebook</li>
-          <li>Instagram</li>
-          <li>Twitter</li>
+          <li className="list-none">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+              Twitter
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -45,10 +57,22 @@ export default function Homepage() {
             <img className="h-[90px] w-[96px]" src="/logo.png" alt="Logo" />
             <div className="flex flex-col mt-5 w-64 xxs:ml-2 ml-0 xs:w-72">
               <div className="flex flex-col items-center py-2 rounded bg-white border border-[#766554]">
-                <ul className="flex justify-center xxs:space-x-5 xs:space-x-10 text-[#766554] text-xs font-semibold list-disc">
-                  <li className="list-none">Facebook</li>
-                  <li>Instagram</li>
-                  <li>Twitter</li>
+                <ul className=" w-full flex justify-around text-[#766554] text-xs font-semibold list-disc">
+                  <li className="list-none">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                      Facebook
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                      Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                      Twitter
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div className=" flex items-center justify-end relative mt-2 w-full">

@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function StoolDetails() {
   return (
-    <div className="2xl:container px-8 sm:px-16 mx-auto">
+    <div className="2xl:container px-4 sm:px-8 mx-auto">
       <div className="relative">
         {/* Background Image */}
         <div className="hidden md:block absolute top-0 right-0 w-1/3">

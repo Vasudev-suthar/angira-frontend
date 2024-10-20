@@ -26,7 +26,7 @@ export default function Coffeetable() {
     { id: 6, src: "/ct3.png", alt: "Image 6" },
   ];
   return (
-    <div className='2xl:container my-5 mx-auto px-8 sm:px-16'>
+    <div className='2xl:container my-5 mx-auto px-4 sm:px-8'>
       <div className="flex flex-wrap mt-3">
         <div className="w-full lg:w-6/12 shadow-[100px_0px_50px_15px_white]">
           <div className="hidden lg:block h-[85px]"></div>
