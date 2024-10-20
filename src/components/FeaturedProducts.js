@@ -4,7 +4,7 @@ import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 
 export default function FeaturedProducts() {
   return (
-    <div className="block bg-[#F4F3F0] w-full overflow-x-hidden h-auto pb-9 sm:pb-20 xl:pb-28">
+    <div className="block bg-[#F4F3F0] w-full overflow-x-hidden h-[100vh] sm:h-auto pb-9 sm:pb-20 xl:pb-28">
 
       {/* Title */}
       <div className="flex justify-center items-center bg-white h-10 sm:h-20 mt-8 ml-5 w-52 sm:w-[480px]">
@@ -22,7 +22,7 @@ export default function FeaturedProducts() {
       <div>
         <div className="w-full relative">
           {/* rounded white backgrond section  */}
-          <div className='flex justify-between items-center py-5 '>
+          <div className='flex justify-between items-center pt-16 sm:pt-10 pb-5'>
             <div className="rounded-full bg-white w-[26vw] md:w-[340px] h-[26vw] md:h-[340px] cursor-pointer -ml-[13.5%] hidden lg:block" ></div>
 
             <div className="flex justify-between items-center mx-auto  md:px-0"> 

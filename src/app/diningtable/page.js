@@ -24,7 +24,7 @@ export default function DiningTablePage() {
   ];
   return (
     <div className="w-screen pb-10 h-auto font-sans">
-      <div className="container my-5 mx-auto px-4">
+      <div className="2xl:container my-5 mx-auto px-8 sm:px-16">
         <div className="flex flex-wrap mt-3">
           <div className="w-full lg:w-6/12 shadow-[100px_0px_50px_15px_white]">
             <div className="hidden md:block h-[85px]"></div>
@@ -52,7 +52,7 @@ export default function DiningTablePage() {
           {['Top Material', 'Leg Material', 'Top Finish', 'Leg Finish', 'Category', 'Knocked Down'].map((label) => (
             <div key={label} className="relative flex justify-center">
               {/* Button */}
-              <button onClick={() => toggleDropdown(label)} className="inline-flex justify-between items-center py-2  focus:outline-none text-sm sm:text-base" > {label} <IoIosArrowDown /> </button>
+              <button onClick={() => toggleDropdown(label)} className="inline-flex justify-between items-center py-2  focus:outline-none text-xs sm:text-base" > {label} <IoIosArrowDown /> </button>
 
               {/* Dropdown */}
               {openDropdown === label && (
@@ -74,7 +74,7 @@ export default function DiningTablePage() {
                <div className="flex-grow flex items-center justify-center">
                 <img src={image.src} alt={image.alt} className="w-full mx-auto" />
                </div>
-                <div className=" text-xs sm:text-[17px] tracking-[3px] mt-auto">Product Name</div>
+                <div className=" text-xs sm:text-[17px] sm:tracking-[3px] mt-auto">Product Name</div>
               </Link>
             ))}
           </div>

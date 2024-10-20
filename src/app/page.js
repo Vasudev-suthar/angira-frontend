@@ -9,7 +9,7 @@ import OurProducts from "@/components/OurProducts";
 
 export default function Home() {
   return (
-    <div className="mx-auto overflow-x-hidden">
+    <div className=" 2xl:container 2xl:mx-auto overflow-x-hidden">
       <Homepage />
       <div id="featured-products" className="hidden md:block">
       <FeaturedProducts />

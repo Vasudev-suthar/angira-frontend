@@ -22,7 +22,7 @@ export default function Homepage() {
   };
 
   return (
-    <div className=" flex">
+    <div className="flex">
 
       {/* Sidebar for Desktop */}
       <div className="hidden sm:flex flex-col justify-center bg-white w-[40px] lg:w-[70px] h-[924px]">
